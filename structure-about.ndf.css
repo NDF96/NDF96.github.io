@@ -8,7 +8,8 @@
 }
 
         
-     
+h2 {color: gainsboro;
+}
 
 	@media screen and (max-width: 900px) {h2 {color: gainsboro;}}
 
@@ -102,10 +103,11 @@
     
 	width:35%; 
 	margin-top: 80px;
-	margin-bottom: 0px;
+    margin-bottom: 20px;
     align-content: center
     margin-left: auto; margin-right: auto;
-    }
+    height: auto;    
+}
 	
 	#topdiv {
 		
@@ -179,12 +181,20 @@
         	#shark-div-1 {
         min-width: 406px;
         max-width: 600px;
-		margin-top: 50px; 
+		margin-top: 40px; 
 		margin-left: auto; 
 		margin-right: auto; 
         text-align: center;
-        height: 20px;
+        height: 1px;
 		      
+     }   
+
+     #shark-div-2 {
+		margin-top: 20px; 
+		margin-left: auto; 
+		margin-right: auto; 
+        text-align: center;
+		height: 15px;
      }   
 
 
