@@ -7,13 +7,13 @@
 	h3 {color: black; text-align: left;
 }
 
-
-h2 {color: gainsboro;
+        
+h2 {color: gainsboro; font-size: 2em; padding: 5px;
 }
 
-	@media screen and (max-width: 900px) {h2 {color: gainsboro;}}
+	/*@media screen and (max-width: 900px) {h2 {color: gainsboro;}}
 
-	@media screen and (max-width: 700px) {h2 {color: gainsboro;}}
+	@media screen and (max-width: 700px) {h2 {color: gainsboro;}}*/
 
 	@media screen and (max-width: 600px) {h2 {color: gainsboro;}}
         
@@ -26,21 +26,6 @@ h2 {color: gainsboro;
 
     a {color: darkgrey}
 
-/*nav a:visited {
-    color: gainsboro;
-    text-transform:;
-}
- 
-/*nav a:hover {
-   /*display: block;
-   font-size:4em;
-    font-weight: 100;
-    text-transform: lowercase;
-   width: 90px;
-   height: 50;
-   color: gray;
-   /*background-color: #d3d9e6;
-   margin-top:80px;*/
 	
 
 	#leftside {
@@ -59,7 +44,21 @@ h2 {color: gainsboro;
 		padding: 10px;
 		}
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: none) {
+        #foto {
+            align-content: center;
+            width:50%;
+        }
+        
+        #heading-text{
+            align-content: center;
+            width:50%;
+        }
+        
+        #shark-div-2{
+            align-content: center;
+            width:50%;
+        }
 
 		#leftside {
 			width: 25%;
@@ -72,6 +71,7 @@ h2 {color: gainsboro;
 			padding: 10px;
 			clear: both;
 			}
+        
         
         
 	}
@@ -101,9 +101,9 @@ h2 {color: gainsboro;
         
 #foto {
     
-	width:35%; 
+	width:40%; 
 	margin-top: 80px;
-    margin-bottom: 20px;
+    margin-bottom 80px;
     align-content: center;
     margin-left: auto; 
     margin-right: auto;
@@ -111,10 +111,10 @@ h2 {color: gainsboro;
 	
 	#topdiv {
 		
-	min-width: 406px;
-    max-width: 600px;
+	min-width: 300px;
+    max-width: none;
     text-align: center
-	height: 100px; 
+	height: 80px; 
 	width: 100%;
 	padding-top: 25 px;
 	color: black; 
@@ -148,10 +148,11 @@ h2 {color: gainsboro;
         align-content: center;
         margin-left: auto; 
         margin-right: auto;
-		margin-top: 180px;
+		margin-top: 120px;
+        padding-top: 15px;
 	}
 
-	#heading-text h2 {font-size: 2em;}
+	/*#heading-text h2 {font-size: 2em;}*/
 
 	#titles {
         
@@ -216,7 +217,7 @@ h2 {color: gainsboro;
 		display: table; 
 		/*border: 1px dotted rgb(217,237,249); 
 		background-color: rgba(217,237,249, .4); */
-		width: 80%; 
+		width: 50%; 
 		margin-top: 10px; 
 		margin-bottom: 80px; 
 		margin-left: auto; 
