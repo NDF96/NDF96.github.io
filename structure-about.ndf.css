@@ -100,8 +100,6 @@ h2 {color: gainsboro; font-size: 2em; padding: 5px;
         
         
 #foto {
-    
-	width:40%; 
 	margin-top: 80px;
     margin-bottom 80px;
     align-content: center;
@@ -196,7 +194,7 @@ h2 {color: gainsboro; font-size: 2em; padding: 5px;
 		margin-left: auto; 
 		margin-right: auto; 
         text-align: center;
-		height: 15px;
+		height: 25px;
      }   
 
 
