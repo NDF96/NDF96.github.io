@@ -104,9 +104,9 @@ h2 {color: gainsboro;
 	width:35%; 
 	margin-top: 80px;
     margin-bottom: 20px;
-    align-content: center
-    margin-left: auto; margin-right: auto;
-    height: auto;    
+    align-content: center;
+    margin-left: auto; 
+    margin-right: auto;
 }
 	
 	#topdiv {
