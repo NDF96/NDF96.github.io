@@ -15,20 +15,23 @@ h2 {color: gainsboro; font-size: 2em; padding: 5px;
 
 	@media screen and (max-width: 700px) {h2 {color: gainsboro;}}*/
 
-	@media screen and (max-width: 600px) {h2 {color: gainsboro;}}
+	@media screen and (max-width: 300px) {h2 {color: gainsboro;}}
         
 
 	
 	li {list-style-type: none; color: black;
         margin-top: 10px; margin-bottom: 5px; padding-top: 25px; padding-left: 25px;}
 
-	p {color: black}
+	p {color: black;
+margin-left: 100px; margin-right: 100px;
+    width 30%;
+} 
 
     a {color: darkgrey}
 
 	
 
-	#leftside {
+#leftside {
         color: black;
 		float: left;
 		width: 25%;
