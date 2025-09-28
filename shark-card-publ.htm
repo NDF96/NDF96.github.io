@@ -1,141 +1,253 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<title>Nicolo Dal Fabbro</title>
-	<link href='http://fonts.googleapis.com/css?family=Creepster' rel='stylesheet' type='text/css'>
-    <link href="structure-about.ndf.css" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nicolò Dal Fabbro — Publications</title>
 
+  <!-- Your global stylesheet -->
+  <link href="structure-about.ndf.css" rel="stylesheet" />
 
+  <!-- Page-scoped styles for a tidy publications layout -->
+  <style>
+    .pubs { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+    .pubs h1 { margin: 0 0 1rem; }
+    .pubs-year { margin: 2rem 0 .75rem; font-weight: 800; font-size: 1.25rem; }
+
+    .pub-list { list-style: none; padding: 0; margin: 0; }
+    .pub-item {
+      margin: 1rem 0;
+      padding-left: 1.2rem;     /* hanging indent */
+      text-indent: -1.2rem;
+      line-height: 1.55;
+    }
+    .pub-title { font-weight: 600; }
+    .pub-authors { color: var(--muted, #475569); display: block; margin-top: .15rem; }
+    .pub-venue { color: #334155; display: block; margin-top: .15rem; }
+
+    .badges { margin-top: .35rem; display: inline-block; }
+    .badges a {
+      display: inline-block;
+      padding: .15rem .55rem;
+      margin-right: .35rem;
+      font-size: .85rem;
+      border: 1px solid var(--border, #e5e7eb);
+      border-radius: 999px;
+      text-decoration: none;
+    }
+    .badges a:hover { border-color: var(--brand, #0ea5e9); color: var(--brand, #0ea5e9); }
+
+    /* Keep space for your fixed top bar from the main CSS */
+    body { padding-top: 64px; }
+  </style>
 </head>
 <body>
 
-<div id="topdiv">
-<span style="float: left; padding-left: 0px; font-size: 1,5em; font-color: black; letter-spacing: 1px;"><a href="index.html"> > Nicolò Dal Fabbro</a> | <a href="CV_NDF2025.pdf">CV</a> | <a href="shark-card-publ.htm">Publications</a></span>
-    
+  <!-- Top nav (kept identical to your other pages) -->
+  <div id="topdiv">
+    <span style="float: left; padding-left: 0px; letter-spacing: 1px;">
+      <a href="index.html">&gt; Nicolò Dal Fabbro</a> |
+      <a href="CV_NDF2025.pdf">CV</a> |
+      <a href="shark-card-publ.htm">Publications</a>
+    </span>
+  </div>
 
-         
-</div>
+  <main class="pubs">
+    <h1>Publications</h1>
 
+	<!-- ===== 2025 ===== -->
+    <h2 class="pubs-year">2025</h2>
+    <ul class="pub-list">
+		<li class="pub-item">
+			<a class="pub-title" href="https://ndf96.github.io/shark-card-publ.htm" target="_blank" rel="noopener">
+			 Long-Term Mapping of the Douro River Plume with Multi-Agent Reinforcement Learning
+			</a>
+			<span class="pub-authors">
+			  <strong>N. Dal Fabbro</strong>, M. Mesbahi, R. Mendes, J. Sousa, G. J. Pappas
+			</span>
+			<span class="pub-venue"> under revision, 2025. </span>
+		  </li>
+      <li class="pub-item">
+        <a class="pub-title" href="https://doi.org/10.1109/TWC.2025.3555941" target="_blank" rel="noopener">
+			Finite-Time Analysis of Over-the-Air Federated TD Learning
+        </a>
+        <span class="pub-authors">
+          <strong>N. Dal Fabbro</strong>, A. Mitra, R. W. Heath, L. Schenato, G. J. Pappas
+        </span>
+        <span class="pub-venue"><em>IEEE Transactions on Wireless Communications</em>, 2025.</span>
+      </li>
 
-  
-    <div id="titles">
-        
-        <h2>Publications</h2> 
-        
-		
-	</div>
-    
-    <div id="css-table">
-	
-		<h3>2024</h3>
-<a href="https://ieeexplore.ieee.org/document/10715716" target="_self">VREM-FL: Mobility-Aware Computation-Scheduling Co-Design for Vehicular Federated Learning</a>
-<p>L. Ballotta, N. Dal Fabbro, G. Perin, L. Schenato, M. Rossi, G. Piro, "VREM-FL: Mobility-Aware Computation-Scheduling Co-Design for Vehicular Federated Learning", in IEEE Transactions on Vehicular Technology, 2024 </p>
-<a href="https://arxiv.org/abs/2403.17247" target="_self">DASA: Delay-Adaptive Multi-Agent Stochastic Approximation</a>
-<p>N. Dal Fabbro, A. Adibi, H. Vincent Poor, Sanjeev Kulkarni, Aritra Mitra, George J. Pappas, "DASA: Delay-Adaptive Multi-Agent Stochastic Approximation", accepted at the 63rd IEEE Conference on Decision and Control, preprint available arXiv:2403.17247, 2024 </p>
-<a href="https://ieeexplore.ieee.org/abstract/document/10644447" target="_self">Finite-Time Analysis of Asynchronous Multi-Agent TD Learning</a>
-<p>N. Dal Fabbro, A. Adibi, Aritra Mitra, George J. Pappas, "Finite-Time Analysis of Asynchronous Multi-Agent TD Learning", Proceedings of the American Control Conference, 2024 </p>
-<a href="https://proceedings.mlr.press/v238/adibi24a" target="_self">Stochastic Approximation with Delayed Updates: Finite-Time Rates under Markovian Sampling</a>
-<p>A. Adibi, N. Dal Fabbro, Luca Schenato, Sanjeev Kulkarni, H. Vincent Poor, George J. Pappas, Hamed Hassani and Aritra Mitra, "Stochastic Approximation with Delayed Updates: Finite-Time Rates under Markovian Sampling", The 27th International Conference on Artificial Intelligence and Statistics (AISTATS), 2024 </p>
-<a href="https://www.sciencedirect.com/science/article/pii/S0167739X23004144" target="_self">Anonymous Federated Learning via Named-Data Networking</a>
-<p>A. Agiollo, E. Bardhi, M. Conti, N. Dal Fabbro, R. Lazzeretti, "Anonymous Federated Learning via Named-Data Networking", Future Generation Computer Systems, 2024 </p>
-<a href="https://arxiv.org/abs/2411.01696" target="_self">Conformal Risk Minimization with Variance Reduction</a>
-<p>S. Noorani, O. Romero, N. Dal Fabbro, H. Hassani, and G. J. Pappas. "Conformal Risk Minimization with Variance Reduction", under revision, preprint available: arXiv preprint arXiv:2411.01696, 2024</p>
-<a href="https://www.sciencedirect.com/science/article/abs/pii/B9780443140815000714?via%3Dihub" target="_self"> Communication-Efficient Federated Reinforcement Learning: Recent Advances and Open Challenges </a>
-<p>N. Dal Fabbro, A. Mitra, G. J. Pappas, "Communication-Efficient Federated Reinforcement Learning:
-	Recent Advances and Open Challenges", Elsevier Encyclopedia of Systems and Control Engineering, 2024, 2024</p>
-        <h3>2023</h3>
-    
-        <a href="https://ieeexplore.ieee.org/document/10158993" target="_self">Federated TD Learning over Finite-Rate Erasure Channels: Linear Speedup under Markovian  Sampling</a>
-<p>N. Dal Fabbro, A. Mitra, G. J. Pappas, "Federated TD Learning over Finite-Rate Erasure Channels: Linear  Speedup under Markovian Sampling", IEEE Control Systems Letters, 2023 
-</p>
-        <a href="https://arxiv.org/abs/2305.10852" target="_self">Q-SHED: Distributed Optimization at the Edge via Hessian Eigenvectors Quantization</a>
-<p>N. Dal Fabbro, M. Rossi, L. Schenato, S. Dey, "Q-SHED: Distributed Optimization at the Edge via Hessian  Eigenvectors Quantization", IEEE International Conference on Communications (ICC), Rome, Italy, 2023
-</p>
-        
-        <a href="https://ieeexplore.ieee.org/abstract/document/10144501" target="_self">A CSI Dataset for Wireless Human Sensing on 80 MHz Wi-Fi Channels</a>
-<p>F. Meneghello, N. Dal Fabbro, D. Garlisi, I. Tinnirello and M. Rossi, "A CSI Dataset for Wireless Human  Sensing on 80 MHz Wi-Fi Channels", IEEE Communications Magazine, 2023 
-</p>
-        
-        <a href="https://openreview.net/forum?id=XbgQFYAtawT" target="_self">Over-the-Air Federated TD Learning</a>
-<p>N. Dal Fabbro, A. Mitra, R. W. Heath, L. Schenato, G. J. Pappas, "Over-the-Air Federated TD Learning", MLSys 2023 Workshop on Resource-Constrained Learning in Wireless Networks, Miami, Florida, 2023</p>
+      <li class="pub-item">
+        <a class="pub-title" href="https://ieeexplore.ieee.org/document/10715716" target="_blank" rel="noopener">
+			VREM-FL: Mobility-Aware Computation–Scheduling Co-Design for Vehicular Federated Learning
+		  </a>
+		  <span class="pub-authors">
+			L. Ballotta, <strong>N. Dal Fabbro</strong>, G. Perin, L. Schenato, M. Rossi, G. Piro
+		  </span>
+		  <span class="pub-venue"><em>IEEE Transactions on Vehicular Technology</em>, 2025.</span>
+		</li>
+    </ul>
 
-	<a href="https://www.sciencedirect.com/science/article/pii/S0005109823006271" target="_self">SHED: A Newton-type algorithm for federated learning based on incremental Hessian  eigenvector sharing</a>
-<p>N. Dal Fabbro, S. Dey, M. Rossi, L. Schenato (2023). "SHED: A Newton-type algorithm for federated learning based on incremental Hessian eigenvector sharing", Automatica, 2023</p>
+    <!-- ===== 2024 ===== -->
+    <h2 class="pubs-year">2024</h2>
+    <ul class="pub-list">
 
+      <li class="pub-item">
+        <a class="pub-title" href="https://doi.org/10.1109/CDC56724.2024.10886380" target="_blank" rel="noopener">
+          DASA: Delay-Adaptive Multi-Agent Stochastic Approximation
+        </a>
+        <span class="pub-authors">
+          <strong>N. Dal Fabbro</strong>, A. Adibi, H. Vincent Poor, S. Kulkarni, A. Mitra, G. J. Pappas
+        </span>
+        <span class="pub-venue">
+          <em>The 63rd IEEE Conference on Decision and Control,</em> 2024
+        </span>
+      </li>
 
-        <h3>2022</h3>
-        
-        <a href="https://ieeexplore.ieee.org/abstract/document/9634111" target="_self">Model-free radio map estimation in massive MIMO systems via semi-parametric Gaussian  regression</a>
-<p>N. Dal Fabbro, M. Rossi, G. Pillonetto, L. Schenato and G. Piro, "Model-free radio map estimation in massive MIMO systems via semi-parametric Gaussian regression," in IEEE Wireless Communications Letters, 2022 </p> 
-        
-<a href="https://ieeexplore.ieee.org/abstract/document/9804861" target="_self">SHARP: Environment and Person Independent Activity Recognition with Commodity IEEE 802.11  Access   Points</a>
-<p>F. Meneghello, D. Garlisi, N. Dal Fabbro, I. Tinnirello and M. Rossi, "SHARP: Environment and Person Independent Activity Recognition with Commodity IEEE 802.11 Access Points," in IEEE Transactions on Mobile  Computing,  2022 </p>
+      <li class="pub-item">
+        <a class="pub-title" href="https://ieeexplore.ieee.org/abstract/document/10644447" target="_blank" rel="noopener">
+          Finite-Time Analysis of Asynchronous Multi-Agent TD Learning
+        </a>
+        <span class="pub-authors">
+          <strong>N. Dal Fabbro</strong>, A. Adibi, A. Mitra, G. J. Pappas
+        </span>
+        <span class="pub-venue"><em>The American Control Conference (ACC),</em> 2024.</span>
+      </li>
 
-    </div>
-	
-	
- <div id="shark-div-1">
-		
+      <li class="pub-item">
+        <a class="pub-title" href="https://proceedings.mlr.press/v238/adibi24a" target="_blank" rel="noopener">
+          Stochastic Approximation with Delayed Updates: Finite-Time Rates under Markovian Sampling
+        </a>
+        <span class="pub-authors">
+          A. Adibi, <strong>N. Dal Fabbro</strong>, L. Schenato, S. Kulkarni, H. V. Poor, G. J. Pappas, H. Hassani, A. Mitra
+        </span>
+        <span class="pub-venue">
+          <em>The 27th International Conference on Artificial Intelligence and Statistics</em>, 2024.
+        </span>
+      </li>
 
-        <a href="https://twitter.com/nicolofabbro" target="_self"><img src="icons8-twitter-50.png" height="35px"; width="auto";></a>
-        <a href="https://scholar.google.com/citations?user=xMdBRM4AAAAJ&hl=it&oi=ao" target="_self"><img src="icons8-google-scholar-48.png" height="35px"; width="auto";></a>
-        <a href="https://it.linkedin.com/in/nicol%C3%B2-dal-fabbro-0b08911a2" target="_self"><img src="icons8-linkedin-50.png" height="35px"; width="auto";></a>
-	</div>
-    
-    <div id="shark-div-1">
-		<!--<h1 id="sharksemester" style="">Shark Semester!</h1>-->
-    
-        
-	</div>
+      <li class="pub-item">
+        <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S0167739X23004144" target="_blank" rel="noopener">
+          Anonymous Federated Learning via Named-Data Networking
+        </a>
+        <span class="pub-authors">
+          A. Agiollo, E. Bardhi, M. Conti, <strong>N. Dal Fabbro</strong>, R. Lazzeretti
+        </span>
+        <span class="pub-venue">
+          <em>Future Generation Computer Systems</em>, 2024.
+        </span>
+      </li>
 
+      <li class="pub-item">
+        <a class="pub-title" href="https://arxiv.org/abs/2411.01696" target="_blank" rel="noopener">
+          Conformal Risk Minimization with Variance Reduction
+        </a>
+        <span class="pub-authors">
+          S. Noorani, O. Romero, <strong>N. Dal Fabbro</strong>, H. Hassani, G. J. Pappas
+        </span>
+        <span class="pub-venue">
+          under revision, preprint: arXiv:2411.01696, 2024.
+        </span>
+      </li>
 
-<!-- not sure if I will teach this.
+      <li class="pub-item">
+        <a class="pub-title" href="https://www.sciencedirect.com/science/article/abs/pii/B9780443140815000714?via%3Dihub" target="_blank" rel="noopener">
+          Communication-Efficient Federated Reinforcement Learning: Recent Advances and Open Challenges
+        </a>
+        <span class="pub-authors">
+          <strong>N. Dal Fabbro</strong>, A. Mitra, G. J. Pappas
+        </span>
+        <span class="pub-venue">
+          <em>Elsevier Encyclopedia of Systems and Control Engineering,</em> 2024.
+        </span>
+      </li>
+	  <li class="pub-item">
+        <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S0005109823006271" target="_blank" rel="noopener">
+          SHED: A Newton-type Algorithm for Federated Learning based on Incremental Hessian Eigenvector Sharing
+        </a>
+        <span class="pub-authors">
+          <strong>N. Dal Fabbro</strong>, S. Dey, M. Rossi, L. Schenato
+        </span>
+        <span class="pub-venue"><em>Automatica</em>, 2024.</span>
+      </li>
+    </ul>
 
- <div id="css-table">
-     
-     <div style="display: table-cell; vertical-align: top; text-align: left; width: 50%; padding: 10px;">
-    	<p>New-school two column -  dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    	<ol>
-    		<li>Shark item 1</li>
-    		<li>Shark item 2</li>
-    		<li>Shark item 3</li>
-    		<li>Shark item 4</li>
-    		<li>Shark item 5</li>
-    	</ol>
-     </div>
+    <!-- ===== 2023 ===== -->
+    <h2 class="pubs-year">2023</h2>
+    <ul class="pub-list">
 
-      <div style="display: table-cell; vertical-align: top; text-align: left; padding: 10px;">
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <li class="pub-item">
+        <a class="pub-title" href="https://ieeexplore.ieee.org/document/10158993" target="_blank" rel="noopener">
+          Federated TD Learning over Finite-Rate Erasure Channels: Linear Speedup under Markovian Sampling
+        </a>
+        <span class="pub-authors">
+          <strong>N. Dal Fabbro</strong>, A. Mitra, G. J. Pappas
+        </span>
+        <span class="pub-venue"><em>IEEE Control Systems Letters</em>, 2023.</span>
+      </li>
 
-    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-     </div>
+      <li class="pub-item">
+        <a class="pub-title" href="https://arxiv.org/abs/2305.10852" target="_blank" rel="noopener">
+          Q-SHED: Distributed Optimization at the Edge via Hessian Eigenvectors Quantization
+        </a>
+        <span class="pub-authors">
+          <strong>N. Dal Fabbro</strong>, M. Rossi, L. Schenato, S. Dey
+        </span>
+        <span class="pub-venue"><em>IEEE International Conference on Communications</em> (Rome), 2023.</span>
+      </li>
 
+      <li class="pub-item">
+        <a class="pub-title" href="https://ieeexplore.ieee.org/abstract/document/10144501" target="_blank" rel="noopener">
+          A CSI Dataset for Wireless Human Sensing on 80&nbsp;MHz Wi-Fi Channels
+        </a>
+        <span class="pub-authors">
+          F. Meneghello, <strong>N. Dal Fabbro</strong>, D. Garlisi, I. Tinnirello, M. Rossi
+        </span>
+        <span class="pub-venue"><em>IEEE Communications Magazine</em>, 2023.</span>
+      </li>
 
-   </div>-->
+      <li class="pub-item">
+        <a class="pub-title" href="https://openreview.net/forum?id=XbgQFYAtawT" target="_blank" rel="noopener">
+          Over-the-Air Federated TD Learning
+        </a>
+        <span class="pub-authors">
+          <strong>N. Dal Fabbro</strong>, A. Mitra, R. W. Heath, L. Schenato, G. J. Pappas
+        </span>
+        <span class="pub-venue">MLSys Workshop on Resource-Constrained Learning in Wireless Networks, 2023.</span>
+      </li>
+    </ul>
 
-<div id="shark-div">
-    
-        
-	</div>
-    
-<div id="pagefooter">© 2023 | Nicolò Dal Fabbro</div>
+    <!-- ===== 2022 ===== -->
+    <h2 class="pubs-year">2022</h2>
+    <ul class="pub-list">
+      <li class="pub-item">
+        <a class="pub-title" href="https://ieeexplore.ieee.org/abstract/document/9634111" target="_blank" rel="noopener">
+          Model-free Radio Map Estimation in Massive MIMO Systems via Semi-parametric Gaussian Regression
+        </a>
+        <span class="pub-authors">
+          <strong>N. Dal Fabbro</strong>, M. Rossi, G. Pillonetto, L. Schenato, G. Piro
+        </span>
+        <span class="pub-venue"><em>IEEE Wireless Communications Letters</em>, 2022.</span>
+      </li>
 
+      <li class="pub-item">
+        <a class="pub-title" href="https://ieeexplore.ieee.org/abstract/document/9804861" target="_blank" rel="noopener">
+          SHARP: Environment and Person-Independent Activity Recognition with Commodity IEEE&nbsp;802.11 Access Points
+        </a>
+        <span class="pub-authors">
+          F. Meneghello, D. Garlisi, <strong>N. Dal Fabbro</strong>, I. Tinnirello, M. Rossi
+        </span>
+        <span class="pub-venue"><em>IEEE Transactions on Mobile Computing</em>, 2022.</span>
+      </li>
+    </ul>
+  </main>
+
+  <div id="shark-div-1" style="text-align:center; margin-top:24px;">
+    <a href="https://twitter.com/nicolofabbro" target="_blank" rel="noopener"><img src="icons8-twitter-50.png" height="35" alt="Twitter"></a>
+    <a href="https://scholar.google.com/citations?user=xMdBRM4AAAAJ&hl=it&oi=ao" target="_blank" rel="noopener"><img src="icons8-google-scholar-48.png" height="35" alt="Google Scholar"></a>
+    <a href="https://it.linkedin.com/in/nicol%C3%B2-dal-fabbro-0b08911a2" target="_blank" rel="noopener"><img src="icons8-linkedin-50.png" height="35" alt="LinkedIn"></a>
+  </div>
+
+  <div id="pagefooter">© 2025 | Nicolò Dal Fabbro</div>
 </body>
 </html>

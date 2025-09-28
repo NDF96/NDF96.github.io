@@ -1,227 +1,172 @@
-	
-	* {margin: 10; padding: 10}
-        
-	
-	body {font-family: 'Open Sans', sans-serif; color: black; background-color: #ffffff;}
+/* ========== Base & Reset ========== */
+:root{
+	--maxw: 860px;
+	--fg: #0f172a;
+	--muted: #475569;
+	--border: #e5e7eb;
+	--bg: #ffffff;
+	--brand: #0ea5e9;
+  }
+  *{ box-sizing: border-box; }
+  html, body{ height:100%; }
+  body{
+	margin:0; padding:0;
+	font-family: system-ui, -apple-system, Segoe UI, Roboto, "Open Sans", Arial, sans-serif;
+	line-height:1.65; color:var(--fg); background:var(--bg);
+	/* space for fixed topbar */
+	padding-top: 64px;
+  }
+  
+  /* Links */
+  a{ color: inherit; text-decoration: none; }
+  a:hover{ color: var(--brand); }
+  
+  /* Headings */
+  h2{ color:#111; font-size: clamp(28px, 4vw, 36px); margin: 0.25rem 0 0.5rem; }
+  h3{ margin: 0.5rem 0; }
+  
+  #heading-text p {
+	max-width: 700px;   /* keep paragraphs at a comfortable width */
+	margin: 0.75rem auto; 
+	line-height: 1.6;   /* improve readability */
+	text-align: justify; /* optional: makes left/right edges aligned */
+  }
 
-	h3 {color: black; text-align: left;
-}
+  #heading-text p.center-me {
+	text-align: center !important;
+	margin: 0.3rem auto;
+  }
 
-        
-h2 {color: gainsboro; font-size: 2em; padding: 5px;
-}
-
-	/*@media screen and (max-width: 900px) {h2 {color: gainsboro;}}
-
-	@media screen and (max-width: 700px) {h2 {color: gainsboro;}}*/
-
-	@media screen and (max-width: 300px) {h2 {color: gainsboro;}}
-        
-
-	
-	li {list-style-type: none; color: black;
-        margin-top: 10px; margin-bottom: 5px; padding-top: 25px; padding-left: 25px;}
-
-	p {color: black;
-margin-left: 100px; margin-right: 100px;
-    width 30%;
-} 
-
-    a {color: darkgrey}
-
-	
-
-#leftside {
-        color: black;
-		float: left;
-		width: 25%;
-		margin-bottom: 20px;
-		padding: 10px;	
-		}
-
-	#rightside {
-        color: black;
-		float: right;
-		width: 25%;
-		margin-bottom: 20px;
-		padding: 10px;
-		}
-
-	@media screen and (max-width: none) {
-        #foto {
-            align-content: center;
-            width:50%;
-        }
-        
-        #heading-text{
-            align-content: center;
-            width:50%;
-        }
-        
-        #shark-div-2{
-            align-content: center;
-            width:50%;
-        }
-
-		#leftside {
-			width: 25%;
-			padding: 10px;	
-			float: left;
-			}
-
-		#rightside {
-			width: 25%;
-			padding: 10px;
-			clear: both;
-			}
-        
-        
-        
-	}
-
-	#bottomcontainer {
-		
-		width: 30%;
-        align-content: center
-        space-between: 20px
-		margin-left: auto; 
-		margin-right: auto;
-		margin-top: 70px;
-	}
-
-	#pagefooter {
-		width: 100%;
-		height: 30px;
-		margin-left: auto; 
-		margin-right: auto;
-		clear: both;
-		background-color: whitesmoke;
-		text-align: center;
-		color: darkgrey;
-		padding-top: 15px; 
-	}
-        
-        
-#foto {
-	margin-top: 80px;
-    margin-bottom 80px;
-    align-content: center;
-    margin-left: auto; 
-    margin-right: auto;
-}
-	
-	#topdiv {
-		
-	min-width: 300px;
-    max-width: none;
-    text-align: center
-	height: 80px; 
+  #heading-text p + p {
+	margin-top: 1.5rem;  /* adds more breathing room between paragraphs */
+  }
+  /* Paragraphs & lists (centered column) */
+  #heading-text, .content, p, li{
+	max-width: var(--maxw);
+  }
+  p{
+	margin: 0.5rem auto;
+	padding: 0 20px;          /* side breathing room */
+	color: var(--fg);
+  }
+  li{
+	list-style: none;
+	margin: 0.5rem auto;
+	padding: 0 20px;
+	color: var(--fg);
+  }
+  
+  /* ========== Top Navigation ========== */
+  #topdiv{
+	position: fixed; top:0; left:0; right:0; z-index: 100;
+	height: 64px;
+	display: flex; align-items: center; justify-content: center;
+	background: color-mix(in srgb, var(--bg) 92%, transparent);
+	border-bottom: 1px solid var(--border);
+	backdrop-filter: saturate(160%) blur(6px);
+	text-align: center;
+  }
+  #topdiv a{
+	display: inline-block;
+	padding: 10px 12px;
+	font-weight: 600;
+  }
+  
+  /* ========== Hero (photo + name + meta) ========== */
+  #shark-div{       /* container for image */
+	max-width: var(--maxw);
+	margin: 12px auto 6px;
+	text-align: center;
+  }
+  #foto{
+	display: block;
+	width: 180px; height: 180px;
+	margin: 24px auto 8px;
+	border-radius: 50%;
+	object-fit: cover;
+	box-shadow: 0 12px 32px rgba(0,0,0,.12);
+  }
+  #heading-text{
+	text-align: center;
+	margin: 8px auto 16px;
+	padding-top: 8px;
+	color: var(--fg);
+  }
+  #heading-text p{
+	margin: 0.2rem auto;
+	color: var(--muted);
+  }
+  
+  /* Small separators/holders you had — keep but neutral */
+  #shark-div-1, #shark-div-2{
+	max-width: var(--maxw);
+	margin: 14px auto;
+	text-align: center;
+  }
+  
+  /* ========== Footer ========== */
+  #pagefooter{
+	border-top: 1px solid var(--border);
+	text-align: center;
+	color: #64748b;
+	font-size: 0.95rem;
+	padding: 16px 12px;
+	margin-top: 28px;
+  }
+  
+  /* ========== Optional side blocks (unused in your HTML now) ========== */
+  #leftside, #rightside{
+	color: var(--fg);
 	width: 100%;
-	padding-top: 25 px;
-	color: black; 
-    background-color: white
+	margin: 0 auto 20px;
+	padding: 10px 20px;
+  }
+  
+  /* ========== Responsive tweaks ========== */
+  @media (max-width: 520px){
+	#foto{ width:150px; height:150px; }
+	body{ padding-top: 60px; }
+  }
+  
+  /* ========== Dark mode ========== */
+  @media (prefers-color-scheme: dark){
+	:root{
+	  --bg:#0b1020; --fg:#e6e9f2; --muted:#9aa4b2; --border:#1f2937; --brand:#38bdf8;
 	}
+	#foto{ box-shadow: 0 10px 28px rgba(0,0,0,.45); }
+  }
+  
 
-	#topdiv a {
-        text-align: center;
-        color: black;
-        font-size:2 em; 
-		padding: 15 px; 
-		text-decoration: none;
-	}
+/* ===== Publications ===== */
+.pubs { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+.pubs h1 { margin: 0 0 1rem; }
+.pubs-year { margin: 2rem 0 .75rem; font-weight: 800; font-size: 1.25rem; }
 
-	/* Make top nav fixed. 
-	I adjust margin on #heading-text since setting .topdiv to fixed, effects the flow of the page.*/
-		
-		#topdiv {
-        height: 50px;
-        text-align: center;
-		position: fixed;
-        padding-top: 25px;
-		top: 0px;
-		z-index: 10;
-		}
+.pub-list { list-style: none; padding: 0; margin: 0; }
+.pub-item {
+  margin: 1rem 0;
+  /* hanging indent: keeps titles aligned even if they wrap */
+  padding-left: 1.2rem;
+  text-indent: -1.2rem;
+  line-height: 1.55;
+}
+.pub-title { font-weight: 600; }
+.pub-authors { color: var(--muted); display: block; margin-top: .15rem; }
+.pub-venue { color: #334155; display: block; margin-top: .15rem; }
 
-
-	#heading-text {
-
-        text-align: center;
-        align-content: center;
-        margin-left: auto; 
-        margin-right: auto;
-		margin-top: 120px;
-        padding-top: 15px;
-	}
-
-	/*#heading-text h2 {font-size: 2em;}*/
-
-	#titles {
-        
-        
-		text-align: center;
-		margin-top: 80px;
-        background-color: white;
-		
-	}
-
-	#titles h2 {font-size: 2em;}
-    #titles h3 {font-size: 1em;}
+.badges { margin-top: .35rem; display: inline-block; }
+.badges a {
+  display: inline-block;
+  padding: .15rem .55rem;
+  margin-right: .35rem;
+  font-size: .85rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  text-decoration: none;
+}
+.badges a:hover { border-color: var(--brand); color: var(--brand); }
 
 
-	/* Set the attachment to 'fixed' for simple parallax scrolling. */
-	#shark-div {
-        min-width: 300px;
-        max-width: 400px;
-		margin-top: 10px; 
-		margin-left: auto; 
-		margin-right: auto; 
-		text-align: center;
-		height: 80px;
-		/*height: 80vh;*/
-		width: 30%;
-       
-	}
-        	#shark-div-1 {
-        min-width: 300px;
-        max-width: 450px;
-		margin-top: 40px; 
-		margin-left: auto; 
-		margin-right: auto; 
-        text-align: center;
-        height: 1px;
-		      
-     }   
-
-     #shark-div-2 {
-		margin-top: 20px; 
-		margin-left: auto; 
-		margin-right: auto; 
-        text-align: center;
-		height: 25px;
-     }   
-
-
-	#sharksemester {
-		position: relative;
-		top: 50%;
-	 	transform: translateY(-50%);
-	 	color: #ffffff;
-	 	font-family: 'Creepster', cursive;
-	 	font-size: 9vw;
-	 	opacity: 0.7;
-	 	letter-spacing: 20px; /*or use 2vw so fonts won't stack. In other words, px forces font stacking.*/
-	 	text-shadow: 2px 2px #000000;
-	 	}
-	
-
-	#css-table {
-		display: table; 
-		/*border: 1px dotted rgb(217,237,249); 
-		background-color: rgba(217,237,249, .4); */
-		width: 50%; 
-		margin-top: 10px; 
-		margin-bottom: 80px; 
-		margin-left: auto; 
-		margin-right: auto;
-		clear: both;
-		}
+.pub-title {
+	white-space: nowrap;
+  }
