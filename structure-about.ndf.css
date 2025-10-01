@@ -17,6 +17,8 @@
 	padding-top: 64px;
   }
   
+
+  
   /* Links */
   a{ color: inherit; text-decoration: none; }
   a:hover{ color: var(--brand); }
@@ -31,6 +33,14 @@
 	line-height: 1.6;   /* improve readability */
 	text-align: justify; /* optional: makes left/right edges aligned */
   }
+  #heading-text p {
+  max-width: 700px;
+  margin: 0.75rem auto;
+  line-height: 1.6;
+  text-align: left;      /* ragged right */
+  hyphens: manual;       /* no automatic splitting */
+  word-spacing: normal;  /* prevent big gaps */
+}
 
   #heading-text p.center-me {
 	text-align: center !important;
@@ -135,7 +145,13 @@
 	}
 	#foto{ box-shadow: 0 10px 28px rgba(0,0,0,.45); }
   }
-  
+
+  /* For all publication text */
+.pub-item, .pub-title, .pub-authors, .pub-venue {
+  hyphens: auto;             /* allow hyphenation */
+  overflow-wrap: break-word; /* fallback if no hyphenation possible */
+}
+
 
 /* ===== Publications ===== */
 .pubs { max-width: 860px; margin: 0 auto; padding: 0 20px; }
