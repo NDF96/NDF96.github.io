@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nicolò Dal Fabbro </title>
+  <link href="structure-about.ndf.css" rel="stylesheet" />
+  <style>
+    :root { --maxw: 980px; }
+    body { margin: 0; }
+    #topdiv {
+      position: sticky; top: 0; z-index: 100;
+      background: #ffffffcc; backdrop-filter: blur(6px);
+      border-bottom: 1px solid #eee;
+    }
+    .nav { max-width: var(--maxw); margin: 0 auto; padding: 12px 16px; display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+    .brand { font-weight: 600; letter-spacing: .4px; text-decoration: none; color: #111; }
+    .nav a { color: #333; text-decoration: none; }
+    .nav a:hover { text-decoration: underline; }
+
+    main { max-width: var(--maxw); margin: 28px auto 72px; padding: 0 16px; }
+    h1 { margin: 8px 0 18px; font-size: 1.9rem; }
+    p.lead { color: #444; margin-top: 0; }
+
+    .project-card { background: #fafafa; border: 1px solid #eee; border-radius: 14px; padding: 16px; box-shadow: 0 2px 6px rgba(0,0,0,.04); }
+    .project-card h2 { margin: 0 0 6px; font-size: 1.2rem; }
+    .meta { color: #666; font-size: .95rem; margin-bottom: 10px; }
+
+    figure { margin: 10px 0 0; }
+    .video-wrap { display: grid; place-items: center; margin-top: 8px; }
+    video, iframe { width: 100%; max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #e6e6e6; }
+    figcaption { color: #666; font-size: .9rem; margin-top: 6px; }
+
+    .links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+    .buttonlike { display: inline-block; padding: 6px 10px; border-radius: 999px; border: 1px solid #ddd; background: white; }
+  </style>
+</head>
+<body>
+  <div id="topdiv">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="index.html">&gt; Nicolò Dal Fabbro</a>
+    </nav>
+  </div>
+
+  <main>
+    <article class="project-card" id="douro-plume">
+      <figure>
+        <div class="video-wrap">
+          <video controls preload="metadata" poster="ICRA_image.001.png">
+            <source src="ICRA_4.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </figure>
+      <div class="links" style="justify-content:center;">
+        <a class="buttonlike" href="https://www.arxiv.org/pdf/2510.03534">Paper</a>
+      </div>
+      
+      <p>
+        We study the problem of long-term (multiple
+days) mapping of a river plume using multiple autonomous
+underwater vehicles (AUVs), focusing on the Douro river representative use-case. 
+We propose an energy - and communication -
+efficient multi-agent reinforcement learning approach in which
+a central coordinator intermittently communicates with the
+AUVs, collecting measurements and issuing commands. Our
+approach integrates spatiotemporal Gaussian process regression
+(GPR) with a multi-head Q-network controller that regulates
+direction and speed for each AUV. Simulations using the
+Delft3D ocean model demonstrate that our method consistently
+outperforms both single- and multi-agent benchmarks, with
+scaling the number of agents both improving mean squared
+error (MSE) and operational endurance. In some instances, our
+algorithm demonstrates that doubling the number of AUVs can
+more than double endurance while maintaining or improving
+accuracy, underscoring the benefits of multi-agent coordination.
+Our learned policies generalize across unseen seasonal regimes
+over different months and years, demonstrating promise for
+future developments of data-driven long-term monitoring of
+dynamic plume environments.
+      </p>
+    </article>
+  </main>
+
+  <footer style="max-width: var(--maxw); margin: 24px auto 40px; padding: 0 16px; color:#666;">
+    © <span id="year"></span> Nicolò Dal Fabbro
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
